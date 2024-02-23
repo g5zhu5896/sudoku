@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+li,
+ul {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.fl {
+  float: left;
+}
+
+li {
+  list-style: none;
+}
+
+.clearfix::after {
+  content: "";
+  visibility: hidden;
+  display: block;
+  width: 0;
+  height: 0;
+  clear: both;
+}
+
+input,
+button {
+  background: rgba(0, 0, 0, 0);
+}
+
+body {
+  background-image: url("1.jpg");
+}
+.main {
+  margin: auto;
+  background-image: url("2.jfif");
+  width: 1060px;
+}
+
+.notice {
+  color: red;
+}
+
+#buttonSubject {
+  width: 100px;
+}
+
+#buttonSubject li {
+  margin-left: 5px;
+}
+
+.grid {
+  text-align: center;
+  width: 720px;
+}
+
+.grid ul {
+  width: 240px;
+  height: 240px;
+  border: 1px solid black;
+  float: left;
+}
+
+.grid li {
+  width: 80px;
+  height: 80px;
+  list-style: none;
+  float: left;
+  margin-right: -1px;
+  border: 1px solid black;
+}
+
+.grid li[class*="conflict"],
+.grid li[class*="conflict"] input {
+  background-color: red;
+}
+
+.grid {
+  text-align: center;
+  width: 720px;
+}
+
+#countAnswer {
+  width: 100px;
+}
+
+#countAnswer li {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.subject,
+.subject input {
+  background-color: #a9a9a9;
+}
+.subject input {
+  outline: none;
+}
+
+.grid li input {
+  /* outline: none; */
+  border: none;
+  background: rgba(0, 0, 0, 0);
+}
+
+/* input:focus {
+		border: 1px solid red;;
+	} */
+.grid li p:first-child input {
+  width: 80px;
+  font-size: 2px;
+}
+
+.grid .aboutGrid {
+  background-color: blueviolet;
+}
+
+.grid .aboutValue {
+  background-color: green;
+}
+
+.grid li p:nth-child(2) input {
+  width: 60px;
+  text-align: center;
+  font-size: 30px;
+  height: 40px;
+}
+
+#recordTitle {
+  text-align: center;
+  border: 1px solid black;
+  line-height: 20px;
+  height: 20px;
+  margin: 0 0 20px 1px;
+}
+
+#recordList li {
+  text-align: center;
+  border: 1px solid black;
+  width: 120px;
+  line-height: 20px;
+  height: 40px;
+  margin: 0 0 20px 5px;
+}
+
+.button li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  float: left;
+}
+
+.button li:not(:first-child) {
+  margin-left: 5px;
+}
+
+.button button {
+  width: 80px;
+  height: 50px;
+  font-weight: 800;
+}
+#subjectInput {
+  width: 500px;
+  height: 50px;
+  margin-bottom: 5px;
+}

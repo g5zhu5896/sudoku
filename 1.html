@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>菜鸟教程(runoob.com)</title>
+    <script src="jquery.js"></script>
+    <script src="1.js"></script>
+  </head>
+
+  <body>
+    <div class="main">
+      <!-- <div>123</div> -->
+      <!-- <div>321</div> -->
+      <h3 class="notice">*右键可以快速计算可能值</h3>
+      <div class="clearfix">
+        <ul id="buttonSubject" class="button fl clearfix"></ul>
+        <div class="grid fl"></div>
+        <ul id="countAnswer" class="button fl clearfix">
+          <li><button onclick="withdrawLast()">撤回</button></li>
+          <li><button onclick="resumeLast()">恢复</button></li>
+          <li><button onclick="recordStatus()">存档</button></li>
+          <li><button onclick="autoCount()">笔记计算</button></li>
+          <li><button onclick="autoAnswer1()">唯一唯余</button></li>
+          <li><button onclick="autoAnswer2()">摒除法</button></li>
+          <li><button onclick="autoAnswer3('qukuai')">区块摒除</button></li>
+          <li><button onclick="autoAnswer3('zuhe')">组合摒除</button></li>
+          <li><button onclick="autoAnswer3('juxing')">矩形摒除</button></li>
+          <li><button onclick="autoAdvancedNote()">不知名法</button></li>
+        </ul>
+        <div id="recordTitle" class="fl">存档点(双击恢复)</div>
+        <ul id="recordList" class="fl"></ul>
+      </div>
+      <ul class="button clearfix">
+        <li><button onclick="createSubject()">置为题目</button></li>
+        <li><button onclick="resetSubject()">重置题目</button></li>
+        <li><button onclick="clearGrid()">清空</button></li>
+        <li><button onclick="exportSubject()">导出题目</button></li>
+        <li><button onclick="importSubject()">导入题目</button></li>
+        <li><button onclick="exportStatus()">导出存档</button></li>
+        <li><button onclick="importStatus()">导入存档</button></li>
+      </ul>
+      <input type="text" id="subjectInput" />
+    </div>
+  </body>
+</html>
+<link rel="stylesheet" href="1.css" />
