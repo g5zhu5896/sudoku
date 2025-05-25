@@ -113,7 +113,7 @@ body {
 	} */
 .grid li p:first-child input {
   width: 80px;
-  font-size: 2px;
+  font-size: 10px;
 }
 
 .grid .aboutGrid {
